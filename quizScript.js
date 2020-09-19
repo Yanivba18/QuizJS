@@ -19,7 +19,7 @@ function loadQuestions() {
             const answerDiv = document.createElement("div")
             const answerElmnt = document.createElement("button")
             answerElmnt.innerHTML = data[i].answers[x]
-            answerElmnt.className = "m-2"
+            answerElmnt.className = "m-2 btn btn-primary"
             answerElmnt.value = x + 1
             answerDiv.appendChild(answerElmnt)
             answersDiv.appendChild(answerDiv)
