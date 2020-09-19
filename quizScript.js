@@ -30,7 +30,7 @@ function loadQuestions() {
                 const explanationElmnt = document.createElement("p")
                 explanationElmnt.innerHTML = data[i].explanation
                 const rightOrWrongElmnt = document.createElement("p")
-                if (parseInt(answerElmnt.value) === data[i].correct) {
+                if (data[i].correct.indexOf(parseInt(answerElmnt.value)) !== -1) {
                     rightOrWrongElmnt.innerHTML = "You are correct!"
                 } else {
                     rightOrWrongElmnt.innerHTML = "Wrong answer"
